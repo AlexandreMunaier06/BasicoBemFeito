@@ -1,5 +1,5 @@
 # O Básico Bem Feito
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+Este projeto foi desenvolvido em grupo como parte de um trabalho acadêmico e tem como objetivo facilitar o gerenciamento de fichas de treino em academias. A aplicação permite que instrutores e alunos organizem e acompanhem seus treinos de forma prática e eficiente.
 
 ## Alunos integrantes da equipe
 
