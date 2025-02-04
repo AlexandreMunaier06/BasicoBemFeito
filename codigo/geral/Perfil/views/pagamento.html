@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Pagamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pagamento.css">
+    <script src="https://kit.fontawesome.com/e6ba16fcdf.js" crossorigin="anonymous"></script>
+    <script src="../js/pagamento.js" type="module" defer></script>
+    
+</head>
+<body>
+    <div class="background"></div>
+        <div class="content">
+            <header class="">
+                <nav class="navbar shadow navbar-dark bg-dark sticky-top">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler aside" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <button class="voltar">Voltar</button>
+                    </div>
+                </nav>
+            </header>
+                <aside>
+                    <div class="offcanvas offcanvas-start d-flex flex-column flex-shrink-0 p-3 text-bg-dark" data-bs-scroll="true"
+                        tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel"
+                        style="width: 280px">
+                        <img src="../../imgs/logoTransparente.png" alt="" width="150"  class="rounded-circle me-2 mx-5 my-3" />
+                        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <img src="../../imgs/usuario.png" alt="" width="60"  class="rounded-circle me-2" />
+                            <span class="fs-4 user__name">Usuário</span>
+                        </a>
+                        <hr />
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link text-white" aria-current="page">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person me-2" viewBox="0 0 16 16">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                      </svg>
+                                    Perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../especificacaousuario/index.html" class="nav-link text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart me-2" viewBox="0 0 16 16">
+                                        <path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+                                      </svg>
+                                    Dados Complementares
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link active">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card me-2" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                                      </svg>
+                                    Plano e Pagamento
+                                </a>
+                            </li>
+                        </ul>
+                        <hr />
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../imgs/usuario.png" alt="" width="35"  class="rounded-circle me-2" />
+                                <strong>Perfil</strong>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                                <li><a class="dropdown-item" href="index.html">Perfil</a></li>
+                                <li><a class="dropdown-item" href="https://wa.me/31971316645">Suporte</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="../../Login/login.html">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <div class="card-main">
+                <main id="main" class="my-3 text-white mx-4 ">
+                    <div class="titulo">
+                        <h1><em>MINHA <span class="conta">CONTA</span></em></h1>
+                        <p class="text-light mx-2">Edite suas informações pessoais e faturamento</p>
+                        <hr class="mx-0">
+                    </div>
+            
+                    <div class="form">
+                        <div class="container text-center card-form">
+                            <div class="row">
+                                <label class="form-label" for="nameInput">Nome do Titular: </label>
+                              <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="d-flex flex-column">
+                                    <input class="w-100" type="text" name="nameInput" id="nameInput" disabled>
+                                </div>
+                              </div>
+                              </div>
+                              <label for="numberInput" class="text-center my-2">Número do Cartão: </label>
+                              <div class="row">
+                                <div class="col-3">
+                                    <div class="d-flex flex-column">
+                                    <input class="" type="text" name="numberInput" id="numberInput1" inputmode="numeric" maxlength="4" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex flex-column">
+                                    <input class="" type="text" name="numberInput" id="numberInput2" inputmode="numeric" maxlength="4" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex flex-column">
+                                    <input class="" type="text" name="numberInput" id="numberInput3" inputmode="numeric" maxlength="4" disabled>
+                                    </div>
+                                </div>
+                               <div class="col-3">
+                                <div class="d-flex flex-column">
+                                <input class="" type="text" name="numberInput" id="numberInput4" inputmode="numeric" maxlength="4" disabled>
+                                </div>
+                               </div>
+                              </div>
+                              <div class="row">
+                                <label class="my-3" for="validade">Data de Validade (mm/aa): </label>
+                              <div class="col-lg-6 col-md-5 col-sm-12 my-2">
+                                <div class="d-flex flex-column">
+                                    <select type="number" id="validade_mes" name="validade" disabled>
+                                        <option value="" disabled selected>Mês</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-5 col-sm-12 my-2">
+                                    <div class="d-flex flex-column">
+                                    <select type="number" id="validade_ano" name="validade" disabled>
+                                        <option value="" disabled selected>Ano</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        <option value="32">32</option>
+                                        <option value="33">33</option>
+                                        <option value="34">34</option>
+                                        <option value="35">35</option>
+                                    </select>
+                                </div>
+                              </div>
+                            </div>
+                              <div class="offset-lg-4 col-lg-4 offset-md-2 col-md-2">
+                                <div class="d-flex flex-column">
+                                    <label for="cvvInput" class="">CVV: </label>
+                                    <input class="" type="text" name="cvvInput" id="cvvInput" maxlength="4" disabled pattern="[0-9]">
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 my-3 offset-lg-3 offset-md-2 offset-sm-2">
+                                  <div class="d-flex flex-column red mb-3 div-btn">
+                                      <div class="btns">
+                                          <button class="btn btn-primary btn-save" type="button">Salvar Dados</button>
+                                          <button class="btn btn-primary btn-cancel" type="button">Cancelar</button>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                    </div>
+                </main>
+                <div class="cartao-credito edit-small">
+                    <div class="container preload">
+                      <div class="creditcard">
+                          <div class="front">
+                              <div id="ccsingle"></div>
+                              <svg version="1.1" id="cardfront" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  x="0px" y="0px" viewBox="0 0 750 471" style="enable-background:new 0 0 750 471;" xml:space="preserve">
+                                  <g id="Front">
+                                      <g id="CardBackground">
+                                          <g id="Page-1_1_">
+                                              <g id="amex_1_">
+                                                  <path id="Rectangle-1_1_" fill="#E5153A" d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                                          C0,17.9,17.9,0,40,0z" />
+                                              </g>
+                                          </g>
+                                          <path fill="#333"  d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z" />
+                                      </g>
+                                      <text transform="matrix(1 0 0 1 60.106 295.0121)" id="svgnumber" class="st2 st3 st4 card-number"></text>
+                                      <text transform="matrix(1 0 0 1 54.1064 428.1723)" id="svgname" class="st2 st5 st6 card-name"></text>
+                                      <text transform="matrix(1 0 0 1 54.1074 389.8793)" class="st7 st5 st8">Nome do Titular</text>
+                                      <text transform="matrix(1 0 0 1 479.7754 388.8793)" class="st7 st5 st8">Validade</text>
+                                      <text transform="matrix(1 0 0 1 65.1054 241.5)" class="st7 st5 st8">Número do Cartão</text>
+                                      <g>
+                                          <text transform="matrix(1 0 0 1 574.4219 433.8095)" id="svgexpire" class="st2 st5 st9 card-date">/</text>
+                                          <polygon class="st2" points="554.5,421 540.4,414.2 540.4,427.9 		" />
+                                      </g>
+                                      <g id="cchip">
+                                          <g>
+                                              <path class="st2" d="M168.1,143.6H82.9c-10.2,0-18.5-8.3-18.5-18.5V74.9c0-10.2,8.3-18.5,18.5-18.5h85.3
+                                      c10.2,0,18.5,8.3,18.5,18.5v50.2C186.6,135.3,178.3,143.6,168.1,143.6z" />
+                                          </g>
+                                          <g>
+                                              <g>
+                                                  <rect x="82" y="70" class="st12" width="1.5" height="60" />
+                                              </g>
+                                              <g>
+                                                  <rect x="167.4" y="70" class="st12" width="1.5" height="60" />
+                                              </g>
+                                              <g>
+                                                  <path class="st12" d="M125.5,130.8c-10.2,0-18.5-8.3-18.5-18.5c0-4.6,1.7-8.9,4.7-12.3c-3-3.4-4.7-7.7-4.7-12.3
+                                          c0-10.2,8.3-18.5,18.5-18.5s18.5,8.3,18.5,18.5c0,4.6-1.7,8.9-4.7,12.3c3,3.4,4.7,7.7,4.7,12.3
+                                          C143.9,122.5,135.7,130.8,125.5,130.8z M125.5,70.8c-9.3,0-16.9,7.6-16.9,16.9c0,4.4,1.7,8.6,4.8,11.8l0.5,0.5l-0.5,0.5
+                                          c-3.1,3.2-4.8,7.4-4.8,11.8c0,9.3,7.6,16.9,16.9,16.9s16.9-7.6,16.9-16.9c0-4.4-1.7-8.6-4.8-11.8l-0.5-0.5l0.5-0.5
+                                          c3.1-3.2,4.8-7.4,4.8-11.8C142.4,78.4,134.8,70.8,125.5,70.8z" />
+                                              </g>
+                                              <g>
+                                                  <rect x="82.8" y="82.1" class="st12" width="25.8" height="1.5" />
+                                              </g>
+                                              <g>
+                                                  <rect x="82.8" y="117.9" class="st12" width="26.1" height="1.5" />
+                                              </g>
+                                              <g>
+                                                  <rect x="142.4" y="82.1" class="st12" width="25.8" height="1.5" />
+                                              </g>
+                                              <g>
+                                                  <rect x="142" y="117.9" class="st12" width="26.2" height="1.5" />
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                                  <g id="Back">
+                                  </g>
+                              </svg>
+                          </div>
+                          <div class="back">
+                              <svg version="1.1" id="cardback" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  x="0px" y="0px" viewBox="0 0 750 471" style="enable-background:new 0 0 750 471;" xml:space="preserve">
+                                  <g id="Front">
+                                      <line class="st0" x1="35.3" y1="10.4" x2="36.7" y2="11" />
+                                  </g>
+                                  <g id="Back">
+                                      <g id="Page-1_2_">
+                                          <g id="amex_2_">
+                                              <path id="Rectangle-1_2_" fill="#E5153A" d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                                      C0,17.9,17.9,0,40,0z" />
+                                          </g>
+                                      </g>
+                                      <rect y="61.6" class="st2" width="750" height="78" />
+                                      <g>
+                                          <path class="st3" d="M701.1,249.1H48.9c-3.3,0-6-2.7-6-6v-52.5c0-3.3,2.7-6,6-6h652.1c3.3,0,6,2.7,6,6v52.5
+                                  C707.1,246.4,704.4,249.1,701.1,249.1z" />
+                                          <rect x="42.9" y="198.6" class="st4" width="664.1" height="10.5" />
+                                          <rect x="42.9" y="224.5" class="st4" width="664.1" height="10.5" />
+                                          <path class="st5" d="M701.1,184.6H618h-8h-10v64.5h10h8h83.1c3.3,0,6-2.7,6-6v-52.5C707.1,187.3,704.4,184.6,701.1,184.6z" />
+                                      </g>
+                                      <text transform="matrix(1 0 0 1 621.999 227.2734)" id="svgsecurity" class="st6 st7 card-cvv"></text>
+                                      <g class="st8">
+                                          <text transform="matrix(1 0 0 1 518.083 280.0879)" class="st9 st6 st10">CVV</text>
+                                      </g>
+                                      <rect x="58.1" y="378.6" class="st11" width="375.5" height="13.5" />
+                                      <rect x="58.1" y="405.6" class="st11" width="421.7" height="13.5" />
+                                      <text transform="matrix(1 0 0 1 59.5073 228.6099)" id="svgnameback" class="st12 st13 card-name-back"></text>
+                                  </g>
+                              </svg>
+                          </div>
+                        </div>
+                </div>
+              </div>
+              <div class="btns">
+                  <button id="credito-btn" class="btn btn-primary card-btn">Editar Dados</button>
+                  <button id="address-btn" class="btn btn-primary card-btn">Editar Endereço</button>
+              </div>
+              <div class="address">
+                <div class="titulo-address">
+                    <h1><em>Meu <span class="conta">Endereço</span></em></h1>
+                    <p class="text-light mx-2">Edite suas informações de endereço de pagamento</p>
+                    <hr class="mx-0">
+                </div>
+        
+                <form class="address-form small-address">
+                    <div class="container text-center">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-5 col-sm-12 my-3">
+                            <div class="d-flex flex-column obrigatorio-cep">
+                                <label class="form-label" for="cepInput">Cep: </label>
+                                <input class="" type="text" name="cep" id="cepInput" disabled maxlength="8" required>
+                              
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-5 col-sm-12 my-3">
+                            <div class="d-flex flex-column obrigatorio-city">
+                                <label for="cityInput">Cidade: </label>
+                                <input class="" type="text" name="city" id="cityInput" disabled required>
+                               
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-5 col-sm-12 my-3">
+                            <div class="d-flex flex-column obrigatorio-country">
+                                <label class="form-label" for="countryInput">País: </label>
+                                <input class="" type="text" name="country" id="countryInput" disabled maxlength="8" required>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-5 col-sm-12 my-3">
+                            <div class="d-flex flex-column obrigatorio-street">
+                            <label for="streetInput">Endereço: </label>
+                            <input class="" type="text" name="street" id="streetInput" disabled required>
+                            
+                            </div>
+                          </div>
+                          
+                          <div class="col-lg-6 col-md-5 col-sm-12 my-3">
+                            <div class="d-flex flex-column obrigatorio-state">
+                                <label for="stateInput">Estado: </label>
+                                <select type="text" id="stateInput" name="state" disabled required>
+                                    <option value="" disabled selected>Selecione um estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="Pi">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+
+                                </select>
+                                
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-5 col-sm-12 my-3">
+                            <div class="d-flex flex-column obrigatorio-neighborhood">
+                                <label for="neighborhoodInput">Bairro: </label>
+                                <input class="" type="text" name="neighborhood" id="neighborhoodInput" disabled required>
+                               
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-5 col-sm-12 my-3">
+                            <div class="d-flex flex-column obrigatorio-houseNumber">
+                                <label for="complementInput">Número: </label>
+                                <input type="text" name="houseNumber" id="houseNumberInput" class="" disabled required>
+                                
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-5 col-sm-12 my-3">
+                            <div class="d-flex flex-column obrigatorio-complement">
+                                <label for="complementInput">Complemento: </label>
+                                <input type="text" name="complement" id="complementInput" class="" disabled required>
+                                
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-4 col-sm-6 my-3 offset-lg-3 offset-md-2 offset-sm-2">
+                            <div class="d-flex flex-column red mb-3 div-btn">
+                                <div class="btns btns-address">
+                                    <button class="btn btn-primary btn-save-address" type="button">Salvar Dados</button>
+                                    <button class="btn btn-primary btn-cancel-address" type="button">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </form>
+              </div>
+              </div>
+        </div> 
+        <footer>
+            <p>&copy; Todos os Direitos reservados - 2024</p>
+        </footer>
+</body>
+</html>

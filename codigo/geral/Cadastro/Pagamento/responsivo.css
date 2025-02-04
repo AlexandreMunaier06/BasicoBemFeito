@@ -1,0 +1,731 @@
+@media only screen and (min-width: 1200px) {
+    .content {
+        width: 80vw;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input,
+    select {
+        width: calc(50% - 5px);
+        margin-right: 5px;
+    }
+
+    button[type="submit"] {
+        width: 70%;
+    }
+
+    .container_pagamento {
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    #pagamento .col-6 {
+        width: 50%;
+    }
+
+    #resultado_plano {
+        width: 70%;
+    }
+
+    .validades {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        gap: 5%;
+    }
+
+    #numeros {
+        justify-content: space-between;
+        display: flex;
+
+    }
+
+
+    .col-xl-6 {
+        display: flex;
+        align-items: center;
+    }
+
+    #numeros {
+        width: 100%;
+    }
+
+    .input-cart-number {
+        margin-right: 10px;
+    }
+
+    .pagamento_form .col-lg-12 {
+        justify-content: center;
+    }
+
+    #crud {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #crud .col-6 {
+        margin-bottom: 20px;
+        width: 190px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .botoes {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .b-card,
+    .b-card_cover {
+      
+        display: flex;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .content {
+        width: 65vw;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input,
+    select {
+        width: calc(50% - 10px);
+        margin-right: 10px;
+    }
+
+    button[type="submit"] {
+        width: 80%;
+    }
+
+    .container_pagamento {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #pagamento .col-6 {
+        width: 50%;
+    }
+
+    #resultado_plano {
+        width: 80%;
+    }
+
+    .col-xl-6 {
+        display: flex;
+        align-items: center;
+    }
+
+    #numeros {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .validades {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .input-cart-number {
+        width: 24% !important;
+    }
+
+    .b-card,
+    .b-card_cover {
+        height: 30vh;
+        padding: 0;
+        margin-bottom: 30px;
+        width: 100% !important;
+    }
+
+    .b-card::before {
+        height: 30vh;
+       
+    }
+
+    .preco1 {
+        padding-top: 15%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .content {
+        width: 70vw;
+    }
+
+    form {
+        padding: 25px;
+    }
+
+    input,
+    select {
+        width: calc(100% - 15px);
+        margin-right: 0;
+    }
+
+    button[type="submit"] {
+        width: 90%;
+    }
+
+    .container_pagamento {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #pagamento .col-6 {
+        width: 100%;
+    }
+
+    #resultado_plano {
+        width: 90%;
+    }
+
+    .col-xl-6 {
+        display: flex;
+        align-items: center;
+    }
+
+    .validades {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    #numeros {
+        width: 100% !important;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .b-card,
+    .b-card_cover {
+        width: 20vw;
+
+    }
+
+    .l-container {
+        
+        justify-content: center;
+    }
+
+    form {
+        justify-content: center;
+    }
+
+    #crud {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #crud .col-6 {
+        margin-bottom: 20px;
+        width: 190px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .botoes {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .creditcard {
+        margin-top: 15vh;
+        margin-bottom: 10vh;
+    }
+
+    .b-card,
+    .b-card_cover {
+        height: 30vh;
+        padding: 0;
+        margin-bottom: 30px;
+        width: 100% !important;
+    }
+
+    .b-card::before {
+        height: 30vh;
+       
+    }
+
+    .preco1 {
+        padding-top: 15%;
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .content {
+        width: 80vw;
+    }
+
+    form {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    input,
+    select {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    .container_pagamento {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #pagamento .col-6 {
+        width: 100%;
+    }
+
+    #resultado_plano {
+        width: 100%;
+    }
+
+    .validades {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        gap: 5%;
+    }
+
+    #numeros {
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+    }
+
+    #numeros input {
+        width: 20% !important;
+    }
+
+    #pagamento label {
+        width: 60%;
+    }
+
+    .col-xl-6 {
+        display: flex;
+        align-items: center;
+    }
+
+    .pagamento_cartao {
+        margin-top: 15vh;
+        margin-bottom: 10vh;
+    }
+
+    #pagamento {
+        padding: 22px;
+    }
+
+    .container {
+        display: flex;
+        padding: 0 0 0 0 !important;
+    }
+
+    #crud {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #crud .col-6 {
+        margin-bottom: 20px;
+        width: 190px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .botoes {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #confirmar {
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    #pagamento .row .col-xl-6 {
+        padding: 0 0 0 12px;
+        width: 100%;
+    }
+
+    .b-card,
+    .b-card_cover {
+        height: 30vh;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .b-card::before {
+        height: 30vh;
+    }
+
+    .preco1 {
+        padding-top: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        width: 100vw;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #crud {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .botoes {
+        width: 80px;
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    .botoes h2 {
+        font-size: 1rem;
+    }
+
+    form {
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-container {
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        position: relative;
+        z-index: 1;
+    }
+
+    .container {
+        display: flex;
+        padding: 0 0 0 0 !important;
+    }
+
+    .titulo>hr {
+        width: 80%;
+    }
+
+    .b-card_cover {
+        padding: 5px;
+    }
+
+    .l-container {
+        justify-content: center;
+    }
+
+    .content-wrapper {
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    label {
+        word-break: normal;
+        font-size: 1rem;
+    }
+
+    .container_pagamento {
+        margin: 0;
+        padding: 0px;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+
+    .container_pagamento input {
+        margin-bottom: 10px;
+    }
+
+    .container_pagamento select {
+        margin-bottom: 10px;
+    }
+
+    .row>.col-sm-12 {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    #validade_ano,
+    #validade_mes {
+        width: 10%;
+    }
+
+    .col-12 .input-cart-number {
+        width: 55px !important;
+        display: flex;
+    }
+
+    .pagamento_form {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+
+    .pagamento_form .col-sm-12 {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .row .col-sm-12 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .pagamento_cartao {
+        width: 60vw;
+        margin: 100px 0 50px 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #confirmar {
+        margin-top: 25px;
+    }
+
+    #pagamento {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 12px;
+    }
+
+    #resultado_plano {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    #pagamento .row {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    #crud {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #crud .col-6 {
+        margin-bottom: 20px;
+        justify-content: center;
+
+
+    }
+
+    .botoes {
+        width: 170px;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .validades {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    #validade_mes,
+    #validade_ano {
+        width: 45% !important;
+    }
+
+    #numeros {
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+    }
+
+    .b-card,
+    .b-card_cover {
+        height: 50vh;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .b-card::before {
+        height: 50vh;
+    }
+
+    .preco1 {
+        padding-top: calc(100% - 30px) !important;
+    }
+
+    .content-wrapper {
+        padding: 10px;
+    }
+
+    .input-cart-number {
+        display: flex;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    #crud {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #crud .col-6 {
+        margin-bottom: 20px;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .botoes {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .l-container {
+        justify-content: center;
+    }
+
+    .preco1 {
+        padding-top: 70%;
+    }
+
+    #confirmar {
+        width: 40vw;
+    }
+
+    #confirmar h2 {
+        font-size: 1.2rem;
+    }
+
+    .pagamento_form .col-12 {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .pagamento_form label {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .validades {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    #validade_mes,
+    #validade_ano {
+        width: 45% !important;
+
+    }
+
+    #resultado_plano {
+        margin-top: 15px;
+    }
+
+    #numeros {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .input-cart-number {
+        font-size: 0.9rem !important;
+    }
+
+    #complementar input {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .b-card_cover,
+    .b-card {
+        width: 200px;
+        justify-content: center;
+    }
+
+    .l-container {
+        justify-content: center;
+    }
+
+    #resultado_plano {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    #confirmar h2 {
+        font-size: 1rem;
+    }
+
+    #confirmar {
+        margin-top: 0;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+
+
+}

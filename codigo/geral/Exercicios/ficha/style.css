@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Jockey One", sans-serif;
+  background-color: rgba(30, 30, 30, 0.5);
+  color: white;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+
+svg {
+  margin-right: 8px;
+}
+
+header {
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: rgba(51, 51, 51, 0.9);
+}
+
+aside div:nth-child(1) {
+  background-color: var(--secondary-color);
+}
+
+aside div ul a:hover {
+  background-color: rgb(30, 87, 161);
+}
+
+h2 {
+  text-align: center;
+  font-family: "Jockey One", sans-serif;
+}
+
+hr {
+  border-color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Jockey One", sans-serif;
+}
+
+.voltar {
+  height: 2rem;
+  width: 7rem;
+  margin-right: 2rem;
+  background-color: #e92c4a;
+  border: #e92c4a;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.voltar:hover {
+  background-color: #ffffff;
+  color: #e92c4a;
+}
+
+#container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 55px;
+  color: white;
+  background-color: rgba(51, 51, 51, 0.9);
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.workout-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.workout-card {
+  background-color: #404040;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.workout-letter {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workout-info {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workout-title {
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
+  margin: 15px;
+}
+
+.view-button {
+  height: 2rem;
+  width: 8rem;
+  margin-right: 2rem;
+  background-color: #e92c4a;
+  border: #e92c4a;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-button:hover {
+  background-color: #ffffff;
+  color: #e92c4a;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  filter: blur(10px);
+  background-image: url("imgs/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  background-color: #404040;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: wh;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+  .card {
+    height: 155px;
+    width: 155px;
+    margin-right: 100px;
+  }
+}
+
+.card {
+  margin-right: 0;
+  border-radius: 4px;
+  width: 100%;
+  transition: 0.4s ease;
+  margin-top: 5%;
+  background-color: #333;
+  border: 1px solid #e92c4a;
+}
+
+.col-12 {
+  width: 100% !important;
+  display: flex;
+}
+
+.col-12 h5 {
+  color: white;
+}
+
+.col-12 p {
+  color: white;
+}
+
+.card:hover {
+  scale: 1.01;
+  transition: 0.4s ease;
+  cursor: pointer;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#fichas-container {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.linha {
+  width: 90%;
+  margin-top: 0;
+}
+
+.col-12 .btn:hover {
+  transition: 0.3s ease;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.col-12 .btn {
+  transition: 0.6s ease;
+}
+
+#naoTemFicha{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.btn-success{
+  margin-top: 60px;
+  width: 80%;
+  justify-content: center;
+}
+
+.card-text{
+  font-weight: 100 ;
+}

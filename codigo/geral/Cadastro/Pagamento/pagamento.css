@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #FAFAFA;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#background {
+  background-image: url(img-pagamento/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Jockey One', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titulo hr {
+  width: 40vw;
+  margin-bottom: 20px;
+}
+
+.linha {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  bottom: 1;
+}
+
+.preco1 {
+  display: block;
+  justify-content: center;
+  bottom: 0;
+  align-items: end;
+  padding-top: 80%;
+ 
+}
+
+
+
+form {
+  padding: 12px !important;
+  justify-content: center;
+}
+
+.container_pagamento label {
+  width: 100% !important;
+  margin-bottom: 0;
+}
+
+.preco {
+  font-size: 1.4rem;
+  font-family: "Jockey One", sans-serif;
+  font-style: italic;
+  padding-bottom: 10px;
+  align-items: end;
+}
+
+#numeros {
+  margin: 0;
+}
+
+.input-cart-number {
+  text-align: center;
+  margin-right: 0px !important;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo h2 {
+  margin-bottom: 10px;
+}
+
+.form-container {
+  max-width: 80vw;
+  margin: 20px auto;
+  padding: 20px;
+  color: white;
+  background-color: rgba(51, 51, 51, 0.9);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  padding: 50px;
+}
+
+input,
+select {
+  width: 50%;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: calc(50% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+input:hover,
+select:hover {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  transition: 0.7s ease-in-out;
+}
+
+
+label {
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: "Jockey One", sans-serif;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#pagamento,
+#complementar,
+#dados_pessoais {
+  width: 100%;
+  margin-top: 50px;
+}
+
+button[type="submit"] {
+  width: 45%;
+  padding: 10px;
+  margin-top: 50px;
+  color: white;
+  border: 2px solid #E92C4A;
+  background-color: #333;
+  border-radius: 5px;
+  transition: color 0.7s ease, border 0.7s ease, box-shadow 0.7s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  color: #E92C4A;
+  border: 2px solid #FAFAFA;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+button h2 {
+  margin: 0;
+}
+
+#crud {
+  display: flex;
+  margin: 15px 0 20px 0;
+}
+
+.botoes {
+  color: white;
+  border: 2px solid #E92C4A;
+  background-color: #333;
+  border-radius: 5px;
+  width: 120px;
+  margin: 0 10px;
+  padding: 15px;
+  transition: color 0.7s ease, border 0.7s ease, box-shadow 0.7s ease;
+}
+
+.botoes h2 {
+  font-size: 1.3rem;
+}
+
+.botoes:hover {
+  cursor: pointer;
+}
+
+.botao_selecionar {
+  justify-content: center;
+  display: flex;
+}
+
+.l-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  width: 100%;
+  padding: 30px;
+}
+
+.b-card {
+  position: relative;
+  width: 100%;
+  padding-bottom: 150%;
+  perspective: 1000px;
+}
+
+.b-card_cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-size: cover;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  will-change: transform;
+  transform: scale(1);
+  transition: transform 0.35s ease-in-out;
+}
+
+.b-card_cover::after {
+  display: block;
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
+  transform: scale(1) translateZ(0);
+  will-change: transform;
+  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+}
+
+.b-card:hover .b-card_cover {
+  transform: scale(1.05);
+}
+
+.b-card:hover .b-card_cover::after {
+  transform: scale(1) translateZ(0);
+}
+
+.b-card::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
+  will-change: opacity;
+  transform-origin: top center;
+  transform: scale(1);
+  transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+
+}
+
+.b-card:hover::before {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+
+.b-card_cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+
+}
+
+
+
+.b-card_cover hr {
+  border: 2px solid white;
+  border-radius: 5px;
+
+  bottom: 1;
+
+}
+
+.b-card_cover {
+  border: 2px solid #ccc;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.4s, border-color 0.3s;
+}
+
+.b-card_cover.selected {
+  border-color: #E5153A;
+  transition: 0.3s;
+}
+
+.l-container {
+  width: 100%;
+}
+
+.l-container .col-4 {
+  width: 100%;
+}
+
+.b-card h2 {
+  padding-top: 10px;
+}
+
+.b-card_cover {
+  justify-content: center;
+  text-align: center;
+}
+
+.b-card hr {
+  width: 90%;
+}
+
+.content-wrapper {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: auto;
+}
+
+.preco1{
+  position: sticky;
+}
+
+.content-wrapper p {
+  margin-top: 10px;
+}
+
+
+
+/*Pagamento*/
+
+.container_pagamento {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 50px;
+  justify-content: center;
+
+}
+
+#pagamento label {
+  width: 50%;
+}
+
+#pagamento form {
+  padding: 0;
+}
+
+.pagamento_form {
+  width: 100%;
+  align-items: center;
+}
+
+.pagamento_cartao {
+  width: 100%;
+}
+
+.creditcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.pagamento_form .col-12 {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.container_cartao {
+  justify-content: center;
+  float: left;
+  margin-right: 20px;
+}
+
+.row {
+  flex-direction: row;
+  width: 100%;
+}
+
+#pagamento .col-6 {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#resultado_plano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  padding: 10px 5px;
+  margin-top: 30px;
+  font-family: 'Jockey One', sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+#resultado_plano {
+  cursor: pointer;
+  transition: transform 0.4s, border-color 0.3s;
+}
+
+#resultado_plano:hover {
+  border-color: #E5153A;
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
+#pagamento>.row {
+  justify-content: center;
+}
+
+.b-card_cover.unselected {
+  filter: grayscale(100);
+  transition: 0.5s ease;
+}
+
+footer p{
+  color: white;
+}

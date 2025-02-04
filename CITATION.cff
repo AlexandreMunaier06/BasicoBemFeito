@@ -1,0 +1,31 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: O Básico Bem Feito
+authors:
+  - family-names: Pereira de Sousa
+    given-names: Felipe Augusto
+  - family-names: Reis
+    given-names: Gabriel
+  - family-names: de Almeida Rocha Vieira
+    given-names: Guilherme
+  - family-names: Mello Cabral
+    given-names: Miguel
+  - family-names: Bittencourt Munaier
+    given-names: Alexandre Augusto
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: de Faria Barros
+    given-names: Diego Augusto
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Silva Tavares
+    given-names: Cleiton
+keywords:
+  - Saúde
+  - Academia
+  - Gerenciamento de Ficha
+  - Personal Trainers
+repository-code: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010100-o-basico-bem-beito.git
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-07-02

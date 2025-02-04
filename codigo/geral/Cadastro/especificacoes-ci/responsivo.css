@@ -1,0 +1,134 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgba(30, 30, 30, 0.5);
+  }
+
+  .background-image-container {
+    filter: blur(10px);
+  }
+
+  form {
+    width: 350px;
+  }
+
+  .form-container {
+    max-width: 90%;
+  }
+
+
+  header {
+    padding: 10px;
+  }
+
+  input {
+    height: 50px;
+  }
+
+  .perfil {
+    margin-bottom: 30px;
+  }
+
+  main {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .form-container {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .perfil img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 5px;
+  }
+
+  .perfil h1 {
+    font-size: 20px;
+  }
+
+
+  .form-container label,
+  .form-container input[type="number"],
+  .form-container input[type="text"],
+  .form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+
+  .form-container button[type="submit"] {
+    width: 75%;
+    margin-top: 30px;
+  }
+
+  .botoes{
+    width: 80px;
+    margin: 0 10px;
+    font-size: 0.5rem; 
+}
+}
+
+
+@media only screen and (max-width: 400px) {
+  body {
+    margin: auto;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-container {
+    max-width: 300px;
+    margin: auto;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .perfil {
+    margin-bottom: 20px;
+  }
+
+  .perfil img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 5px;
+  }
+
+  .perfil h1 {
+    font-size: 18px;
+  }
+
+  form {
+    width: 90%;
+    margin: auto;
+  }
+
+  label,
+  input[type="number"],
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 6px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .botoes{
+    width: 60px;
+    margin: 0 10px;
+    font-size: 0.38rem; 
+}
+}

@@ -1,0 +1,72 @@
+{
+  "Peito": [
+    "Supino Reto",
+    "Supino Inclinado",
+    "Supino Declinado",
+    "Crucifixo",
+    "Crucifixo Inclinado",
+    "Crucifixo Declinado",
+    "Voador",
+    "Peck Deck",
+    "Flexão de Braços",
+    "Cross Over Polia Alta",
+    "Cross Over Polia Média",
+    "Cross Over Polia Baixa"
+  ],
+  "Costas": [
+    "Puxada Frontal Pegada",
+    "Puxada Alta",
+    "Remada Curvada",
+    "Remada Sentada",
+    "Levantamento Terra",
+    "Pull Over",
+    "Remada Unilateral",
+    "Serrote"
+  ],
+  "Perna": [
+    "Agachamento Livre",
+    "Leg Press",
+    "Extensão de Perna",
+    "Flexão de Perna",
+    "Afundos",
+    "Levantamento Terra Romeno",
+    "Panturrilha em Pé",
+    "Panturrilha Sentado"
+  ],
+  "Triceps": [
+    "Tríceps Testa",
+    "Tríceps Pulley",
+    "Mergulho nas Paralelas",
+    "Tríceps Francês",
+    "Tríceps Coice",
+    "Supino Fechado",
+    "Fundos"
+  ],
+  "Biceps": [
+    "Rosca Direta",
+    "Rosca Alternada",
+    "Rosca Martelo",
+    "Rosca Concentrada",
+    "Rosca Scott",
+    "Rosca Inversa",
+    "Rosca no Cabo"
+  ],
+  "Ombro": [
+    "Desenvolvimento com Barra",
+    "Desenvolvimento com Halteres",
+    "Elevação Lateral",
+    "Elevação Frontal",
+    "Elevação Posterior",
+    "Remada Alta",
+    "Crucifixo Invertido"
+  ],
+  "Abdomen": [
+    "Abdominal Supra",
+    "Abdominal Infra",
+    "Abdominal Oblíquo",
+    "Prancha",
+    "Abdominal na Roda",
+    "Abdominal na Cadeira Roman",
+    "Abdominal na Bola"
+  ]
+}

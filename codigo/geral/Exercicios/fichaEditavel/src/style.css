@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(30, 30, 30, 0.5);
+    color: white;
+}
+
+* {
+    font-family: 'Jockey One', sans-serif;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(5px) brightness(0.7);
+    background-image: url('../../../Cadastro/Pagamento/img-pagamento/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+svg {
+    margin-right: 8px;
+}
+
+header {
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: rgba(51, 51, 51, 0.9);
+}
+
+aside div:nth-child(1) {
+    background-color: var(--secondary-color);
+}
+
+aside div ul a:hover {
+    background-color: rgb(30, 87, 161);
+}
+
+.voltar {
+    height: 2rem;
+    width: 7rem;
+    margin-right: 2rem;
+    background-color: #E92C4A;
+    border: #E92C4A;
+    border-radius: 0.4rem;
+    font-weight: 500;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.voltar h2 {
+    color: white;
+}
+
+.voltar {
+    transition: 0.7 ease;
+}
+
+.voltar:hover {
+    background-color: white;
+    color: #E92C4A;
+    transition: 0.7 ease;
+}
+
+#container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 55px;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.9);
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#fichaName,
+#cadastrarExercicio,
+#salvarBotao {
+    border: 2px solid #E92C4A;
+    color: #ffffff;
+    background-color: #333333;
+    font-weight: 100;
+    border-radius: 5px;
+    height: 3rem;
+    margin-left: 0.5rem;
+}
+
+#fichaName:hover,
+#cadastrarExercicio:hover,
+#salvarBotao:hover {
+    border: 2px solid white;
+    color: #E92C4A;
+    transition: 0.5s ease-in-out;
+}
+
+.linha {
+    width: 50%;
+}
+
+aside hr {
+    width: 90%;
+}
+
+input {
+    background-color: #333333 !important;
+    color: white !important;
+    width: 40vw !important;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.list-group-item {
+    width: 40vw;
+    background-color: #333;
+    color: white;
+    transition: 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.list-group-item:hover {
+    transition: 0.4s ease;
+    scale: 1.01;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.list-group-item:hover .crud-button {
+    background-color: lightcyan;
+    transition: 0.5s ease;
+}
+
+.list-group-item .crud-button {
+    margin-left: 10px;
+    border: none;
+    background-color: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.crud-button:hover {
+    transition: 0.3s ease;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title__p{
+    
+    font-size: 14px;
+    color: #E92C4A;
+  }

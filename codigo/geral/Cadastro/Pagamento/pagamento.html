@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagamento.css">
+    <link rel="stylesheet" href="cartao.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <script rel="text/javascript" src="pagamento.js"></script>
+    <script rel="text/javascript" src="cartao.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Área de Pagamento</title>
+</head>
+
+<body>
+    <div id="background">
+    </div>
+    <div class="content">
+        <main>
+            <div class="form-container">
+                <div class="container">
+
+                    <h2>Comece agora seu <span style="color: #E92C4A;">Projeto</span></h2>
+                    <h5>Preencha os dados abaixo:</h5>
+                    <div class="container-fluid text-center">
+
+                        <div class="l-container">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="b-card">
+                                        <div class="b-card_cover"
+                                            style="background-image: url(img-pagamento/plano1.jpg);" id="gratis"
+                                            data-identifier="Plano Grátis">
+                                            <div class="content-wrapper">
+                                                <h2>Plano <span style="color: #E92C4A;">Grátis</span></h2>
+                                                <p>Tenha acesso a algumas de nossas fichas padrões gratuitamente!</p>
+
+                                                <div class="preco1">
+                                                    <div class="linha">
+                                                        <hr>
+                                                    </div>
+                                                    <p class="preco"><span style="color: #E92C4A;">GRÁTIS</span></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="b-card">
+                                        <div class="b-card_cover"
+                                            style="background-image: url(img-pagamento/plano2.jpg);" id="mensal"
+                                            data-identifier="Plano Mensal">
+                                            <div class="content-wrapper">
+                                                <h2>Plano <span style="color: #E92C4A;">Mensal</span></h2>
+                                                <p>Acompanhamento profissional em toda sua evolução!</p>
+
+                                                <div class="preco1">
+                                                    <div class="linha">
+                                                        <hr>
+                                                    </div>
+                                                    <p class="preco">R$ <span style="color: #E92C4A;">99,90</span></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="b-card">
+                                        <div class="b-card_cover"
+                                            style="background-image: url(img-pagamento/plano3.jpg); background-position: 0% 15%;"
+                                            id="anual" data-identifier="Plano Anual">
+                                            <div class="content-wrapper">
+                                                <h2>Plano <span style="color: #E92C4A;">Anual</span></h2>
+                                                <p>Evite preocupações com a renovação e acesse durante todo o ano!</p>
+                                                <div class="preco1">
+                                                    <div class="linha">
+                                                        <hr>
+                                                    </div>
+                                                    <p class="preco">R$ <span style="color: #E92C4A;">990,90</span:< /p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+
+
+
+                    <div id="pagamento">
+
+                        <div class="titulo">
+                            <h2>INFORMAÇÕES DE <span style="color: #E92C4A;">PAGAMENTO</span></h2>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" id="resultado_plano">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="container_pagamento">
+                                    <div class="pagamento_form">
+                                        <form>
+
+                                            <label for="titular">Nome do Titular:</label>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <input type="text" id="titular" name="titular" style="width: 100%;">
+                                            </div>
+
+                                            <label for="cartao">Número do Cartão:</label>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="row" id="numeros">
+                                                    <input type="text" inputmode="numeric" id="cartao_numero1"
+                                                        class="input-cart-number" maxlength="4" style="width: 20%">
+                                                    <input type="text" inputmode="numeric" id="cartao_numero2"
+                                                        class="input-cart-number" maxlength="4" style="width: 20%">
+                                                    <input type="text" inputmode="numeric" id="cartao_numero3"
+                                                        class="input-cart-number" maxlength="4" style="width: 20%">
+                                                    <input type="text" inputmode="numeric" id="cartao_numero4"
+                                                        class="input-cart-number" maxlength="4" style="width: 20%">
+                                                </div>
+                                            </div>
+
+                                            <label for="validade">Validade do Cartao:</label>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-12" style="gap: 10px;">
+                                                <div class="validades">
+                                                    <select type="number" id="validade_mes" name="validade"
+                                                        style="width: 50%">
+                                                        <option value="" disabled selected>Mês</option>
+                                                        <option>01</option>
+                                                        <option>02</option>
+                                                        <option>03</option>
+                                                        <option>04</option>
+                                                        <option>05</option>
+                                                        <option>06</option>
+                                                        <option>07</option>
+                                                        <option>08</option>
+                                                        <option>09</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                    </select>
+
+                                                    <select type="number" id="validade_ano" name="validade"
+                                                        style="width: 50%">
+                                                        <option value="" disabled selected>Ano</option>
+                                                        <option>24</option>
+                                                        <option>25</option>
+                                                        <option>26</option>
+                                                        <option>27</option>
+                                                        <option>28</option>
+                                                        <option>29</option>
+                                                        <option>30</option>
+                                                        <option>31</option>
+                                                        <option>32</option>
+                                                        <option>33</option>
+                                                        <option>34</option>
+                                                        <option>35</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <label for="cvv">CVV:</label>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <input type="text" id="cvv" name="cvv" maxlength="4"
+                                                    style="width: 100%;">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--cartão-->
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="pagamento_cartao">
+                                    <div class="container preload">
+                                        <div class="creditcard">
+                                            <div class="front">
+                                                <div id="ccsingle"></div>
+                                                <svg version="1.1" id="cardfront" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 750 471" style="enable-background:new 0 0 750 471;"
+                                                    xml:space="preserve">
+                                                    <g id="Front">
+                                                        <g id="CardBackground">
+                                                            <g id="Page-1_1_">
+                                                                <g id="amex_1_">
+                                                                    <path id="Rectangle-1_1_" fill="#E5153A" d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                                                    C0,17.9,17.9,0,40,0z" />
+                                                                </g>
+                                                            </g>
+                                                            <path fill="#333"
+                                                                d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z" />
+                                                        </g>
+                                                        <text transform="matrix(1 0 0 1 60.106 295.0121)" id="svgnumber"
+                                                            class="st2 st3 st4" class="numero_cartao">
+                                                        </text>
+                                                        <text transform="matrix(1 0 0 1 54.1064 428.1723)" id="svgname"
+                                                            class="st2 st5 st6" class="titular_cartao">
+                                                        </text>
+                                                        <text transform="matrix(1 0 0 1 54.1074 389.8793)"
+                                                            class="st7 st5 st8">Nome
+                                                            do Titular</text>
+                                                        <text transform="matrix(1 0 0 1 479.7754 388.8793)"
+                                                            class="st7 st5 st8">Validade</text>
+                                                        <text transform="matrix(1 0 0 1 65.1054 241.5)"
+                                                            class="st7 st5 st8">Número
+                                                            do Cartão</text>
+                                                        <g>
+                                                            <text transform="matrix(1 0 0 1 574.4219 433.8095)"
+                                                                id="svgexpire" class="st2 st5 st9"
+                                                                class="validade_cartao">**/**</text>
+                                                            <text transform="matrix(1 0 0 1 479.3848 417.0097)"
+                                                                class="st2 st10 st11"></text>
+                                                            <text transform="matrix(1 0 0 1 479.3848 435.6762)"
+                                                                class="st2 st10 st11"></text>
+                                                            <polygon class="st2"
+                                                                points="554.5,421 540.4,414.2 540.4,427.9 		" />
+                                                        </g>
+                                                        <g id="cchip">
+                                                            <g>
+                                                                <path class="st2"
+                                                                    d="M168.1,143.6H82.9c-10.2,0-18.5-8.3-18.5-18.5V74.9c0-10.2,8.3-18.5,18.5-18.5h85.3
+                                                c10.2,0,18.5,8.3,18.5,18.5v50.2C186.6,135.3,178.3,143.6,168.1,143.6z" />
+                                                            </g>
+                                                            <g>
+                                                                <g>
+                                                                    <rect x="82" y="70" class="st12" width="1.5"
+                                                                        height="60" />
+                                                                </g>
+                                                                <g>
+                                                                    <rect x="167.4" y="70" class="st12" width="1.5"
+                                                                        height="60" />
+                                                                </g>
+                                                                <g>
+                                                                    <path class="st12" d="M125.5,130.8c-10.2,0-18.5-8.3-18.5-18.5c0-4.6,1.7-8.9,4.7-12.3c-3-3.4-4.7-7.7-4.7-12.3
+                                                    c0-10.2,8.3-18.5,18.5-18.5s18.5,8.3,18.5,18.5c0,4.6-1.7,8.9-4.7,12.3c3,3.4,4.7,7.7,4.7,12.3
+                                                    C143.9,122.5,135.7,130.8,125.5,130.8z M125.5,70.8c-9.3,0-16.9,7.6-16.9,16.9c0,4.4,1.7,8.6,4.8,11.8l0.5,0.5l-0.5,0.5
+                                                    c-3.1,3.2-4.8,7.4-4.8,11.8c0,9.3,7.6,16.9,16.9,16.9s16.9-7.6,16.9-16.9c0-4.4-1.7-8.6-4.8-11.8l-0.5-0.5l0.5-0.5
+                                                    c3.1-3.2,4.8-7.4,4.8-11.8C142.4,78.4,134.8,70.8,125.5,70.8z" />
+                                                                </g>
+                                                                <g>
+                                                                    <rect x="82.8" y="82.1" class="st12" width="25.8"
+                                                                        height="1.5" />
+                                                                </g>
+                                                                <g>
+                                                                    <rect x="82.8" y="117.9" class="st12" width="26.1"
+                                                                        height="1.5" />
+                                                                </g>
+                                                                <g>
+                                                                    <rect x="142.4" y="82.1" class="st12" width="25.8"
+                                                                        height="1.5" />
+                                                                </g>
+                                                                <g>
+                                                                    <rect x="142" y="117.9" class="st12" width="26.2"
+                                                                        height="1.5" />
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <g id="Back">
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="back">
+                                                <svg version="1.1" id="cardback" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 750 471" style="enable-background:new 0 0 750 471;"
+                                                    xml:space="preserve">
+                                                    <g id="Front">
+                                                        <line class="st0" x1="35.3" y1="10.4" x2="36.7" y2="11" />
+                                                    </g>
+                                                    <g id="Back">
+                                                        <g id="Page-1_2_">
+                                                            <g id="amex_2_">
+                                                                <path id="Rectangle-1_2_" fill="#E5153A" d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                                                C0,17.9,17.9,0,40,0z" />
+                                                            </g>
+                                                        </g>
+                                                        <rect y="61.6" class="st2" width="750" height="78" />
+                                                        <g>
+                                                            <path class="st3" d="M701.1,249.1H48.9c-3.3,0-6-2.7-6-6v-52.5c0-3.3,2.7-6,6-6h652.1c3.3,0,6,2.7,6,6v52.5
+                                            C707.1,246.4,704.4,249.1,701.1,249.1z" />
+                                                            <rect x="42.9" y="198.6" class="st4" width="664.1"
+                                                                height="10.5" />
+                                                            <rect x="42.9" y="224.5" class="st4" width="664.1"
+                                                                height="10.5" />
+                                                            <path class="st5"
+                                                                d="M701.1,184.6H618h-8h-10v64.5h10h8h83.1c3.3,0,6-2.7,6-6v-52.5C707.1,187.3,704.4,184.6,701.1,184.6z" />
+                                                        </g>
+                                                        <text transform="matrix(1 0 0 1 621.999 227.2734)"
+                                                            id="svgsecurity" class="st6 st7" class="cvv_cartao"></text>
+                                                        <g class="st8">
+                                                            <text transform="matrix(1 0 0 1 518.083 280.0879)"
+                                                                class="st9 st6 st10">CVV</text>
+                                                        </g>
+                                                        <rect x="58.1" y="378.6" class="st11" width="375.5"
+                                                            height="13.5" />
+                                                        <rect x="58.1" y="405.6" class="st11" width="421.7"
+                                                            height="13.5" />
+                                                        <text transform="matrix(1 0 0 1 59.5073 228.6099)"
+                                                            id="svgnameback" class="st12 st13"></text>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="complementar">
+                        <div class="titulo">
+                            <h2>INFORMAÇÕES <span style="color: #E92C4A;">COMPLEMENTARES</span></h2>
+                            <hr>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="cep">CEP:</label>
+                                    <input type="number" id="cep" name="cep" style="width: 100%;">
+                                </div>
+                                <div class="col-6">
+                                    <label for="cidade">Cidade:</label>
+                                    <input type="text" id="cidade" name="cidade" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="estado">Estado:</label>
+                                    <input type="text" id="estado" name="estado" style="width: 100%;">
+                                </div>
+                                <div class="col-6">
+                                    <label for="país">País:</label>
+                                    <input type="text" id="país" name="país" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="endereco">Endereço:</label>
+                                    <input type="text" id="endereco" name="endereco" style="width: 100%;">
+                                </div>
+                                <div class="col-6">
+                                    <label for="bairro">Endereço:</label>
+                                    <input type="text" id="bairro" name="bairro" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">
+                                    <label for="numero_residencia">Numero:</label>
+                                    <input type="number" id="numero_residencia" name="numero_residencia"
+                                        style="width: 100%;">
+                                </div>
+                                <div class="col-7">
+                                    <label for="complemento">Complemento:</label>
+                                    <input type="text" id="complemento" name="complemento" style="width: 100%;">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="crud" class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <button class="botoes" id="salvar">
+                                <h2>SALVAR</h2>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <button class="botoes" id="exibir">
+                                <h2>EXIBIR</h2>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <button class="botoes" id="alterar">
+                                <h2>ALTERAR</h2>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <button class="botoes" id="remover">
+                                <h2>REMOVER</h2>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="submit" id="confirmar">
+                        <h2>CONFIRMAR</h2>
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Todos os Direitos reservados - 2024</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

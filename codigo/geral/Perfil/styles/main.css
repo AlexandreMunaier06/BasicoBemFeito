@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Jockey One", sans-serif;
+}
+
+:root{
+    --bg-color: #333333;
+    --secondary-color: #3a3838;
+}
+
+/*Alterações no Main*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.background{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+    filter: blur(10px); 
+    background-image: url('../../imgs/academia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+    background-color: #333333c0;
+    height: 100vh;
+    background-size: cover;
+}
+
+.conta{
+    color: #E92C4A;
+}
+
+footer{
+    background-color: #333333c0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    padding: 0.3rem;
+    align-items: center;
+}
+
+footer p{
+    margin-top: 1rem;
+}
+
+aside div:nth-child(1){
+    background-color: var(--secondary-color);
+}
+
+aside div ul a:hover{
+    background-color: rgb(30, 87, 161);
+}
+
+label{
+    text-align: left;
+    margin-left: 5px;
+    font-size: 18px;
+ }
+
+ input, select{
+    border-radius: 10px;
+    max-width: 20rem;
+    padding: 3px 10px;
+    background-color: rgb(231, 230, 230);
+}
+input:disabled, select:disabled{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    cursor: not-allowed;
+}
+
+
+.btn-save, .btn-cancel{
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #C90A6D, #FF48A0);
+    color: white;
+}
+
+
+.voltar{
+  height: 2rem;
+  width: 4rem;
+  margin-right: 2rem;
+  background-image: linear-gradient(to bottom right, #C90A6D, #FF48A0);
+  border: #E92C4A;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  color: white;
+}

@@ -1,0 +1,213 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "firstName": "Guilherme",
+      "lastName": "Vieira",
+      "email": "guilhermearv3@gmail.com",
+      "number": "31986991214",
+      "password": "123",
+      "gender": "Masculino",
+      "plano_salvo": "Plano Mensal",
+      "cartao": {
+        "titular": "Guilherme de Almeida Rocha Vieira",
+        "numero_cartao": "4583213119239312",
+        "validadeMes": "02",
+        "validadeAno": "31",
+        "cvv": "569"
+      },
+      "endereco": {
+        "cep": "30575834",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "pais": "Brasil",
+        "endereco": "Avenida Aggeo Pio Sobrinho",
+        "bairro": "Buritis",
+        "numeroRes": "201",
+        "complemento": "apto 803"
+      },
+      "especificacoes_pessoais": {
+        "deficiencia": "nao",
+        "descricao_deficiencia": "Não",
+        "lesao": "sim",
+        "descricao_lesao": "Lesão no ombro",
+        "condicao_medica": "nao",
+        "descricao_condicao": "Não"
+      },
+      "especificacoes_academia": {
+        "peso": "73",
+        "altura": "171",
+        "dias_treino": "5",
+        "tempo_treino": "2 anos",
+        "treino_atual": "Treino divido em 5 fichas: Peito, Costas, Perna, Ombro e Panturrilha, Bíceps e Tríceps",
+        "objetivo": "Hipertrofia e definição muscular",
+        "grupos_musculares": "Abdomen e Peitoral"
+      },
+      "fichas": {
+        "Peito": {
+          "id": 1,
+          "nome": "Peito",
+          "descricao": "Hipertrofia",
+          "exercicios": [
+            {
+              "nome": "Supino",
+              "series": 4,
+              "repeticoes": 12,
+              "descanso": "120",
+              "carga": "40"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "2",
+      "firstName": "felipe",
+      "lastName": "sousa",
+      "email": "felipeaps79860918@gmail.com",
+      "number": "12312-3212",
+      "password": "123",
+      "gender": "Masculino",
+      "plano_salvo": "Plano Mensal",
+      "cartao": {
+        "titular": "felipe augusto ap ",
+        "numero_cartao": "1232321323122312",
+        "validadeMes": "08",
+        "validadeAno": "34",
+        "cvv": "1322"
+      },
+      "endereco": {
+        "cep": "33200486",
+        "cidade": "Vespasiano",
+        "estado": "MG",
+        "pais": "Brasil",
+        "endereco": "Alameda Ipê Roxo",
+        "bairro": "Rosa dos Ventos",
+        "numeroRes": "25",
+        "complemento": "CASA"
+      },
+      "especificacoes_pessoais": {
+        "deficiencia": "sim",
+        "descricao_deficiencia": "Nao tenho",
+        "lesao": "nao",
+        "descricao_lesao": "nao tenho",
+        "condicao_medica": "sim",
+        "descricao_condicao": "ligamento rompido",
+        "peso": "30",
+        "altura": "170"
+      },
+      "especificacoes_academia": {
+        "dias_treino": "3",
+        "tempo_treino": "1 ano",
+        "treino_atual": "ABC e os crl",
+        "objetivo": "ficar maior",
+        "grupos_musculares": "pintao"
+      },
+      "fichas": {
+        "peitos": {
+          "id": 1,
+          "nome": "peitos",
+          "descricao": "peitos",
+          "exercicios": [
+            {
+              "nome": "supino reto ",
+              "series": 12,
+              "repeticoes": 4,
+              "descanso": "120"
+            },
+            {
+              "nome": "agachamento ",
+              "series": 131,
+              "repeticoes": 23213,
+              "descanso": "21"
+            },
+            {
+              "nome": "dawdaw",
+              "series": 3213,
+              "repeticoes": 21312312,
+              "descanso": ""
+            },
+            {
+              "nome": "dwadaw",
+              "series": 3123123,
+              "repeticoes": 123123,
+              "descanso": "12"
+            }
+          ]
+        },
+        "2peitos": {
+          "id": 2,
+          "nome": "2peitos",
+          "descricao": "2peitos",
+          "exercicios": []
+        }
+      }
+    },
+    {
+      "id": "3",
+      "firstName": "Miguel",
+      "lastName": "Mello",
+      "email": "miguelmellommc@gmail.com",
+      "number": "31982283741",
+      "password": "123",
+      "gender": "Masculino",
+      "fichas": {
+        "1": {
+          "id": 1,
+          "nome": "Peito",
+          "descricao": "Hipertrofia",
+          "exercicios": [
+            {
+              "nome": "Supino",
+              "series": 4,
+              "repeticoes": 10,
+              "descanso": "30",
+              "carga": 50
+            }
+          ]
+        },
+        "Costtas": {
+          "id": 2,
+          "nome": "Costtas",
+          "descricao": "hipertrofia",
+          "exercicios": []
+        }
+      },
+      "plano_salvo": "Plano Grátis",
+      "cartao": {
+        "titular": "Miguel Mello",
+        "numero_cartao": "1234213412341234",
+        "validadeMes": "10",
+        "validadeAno": "32",
+        "cvv": "123"
+      },
+      "endereco": {
+        "cep": "31310530",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "pais": "Brasil",
+        "endereco": "Rua Monteiro Lobato",
+        "bairro": "Ouro Preto",
+        "numeroRes": "1887",
+        "complemento": "902"
+      },
+      "especificacoes_pessoais": {
+        "deficiencia": "nao",
+        "descricao_deficiencia": "nao",
+        "lesao": "nao",
+        "descricao_lesao": "nao",
+        "condicao_medica": "nao",
+        "descricao_condicao": "nao",
+        "peso": "90",
+        "altura": "1.76"
+      },
+      "especificacoes_academia": {
+        "dias_treino": "5",
+        "tempo_treino": "1 ano",
+        "treino_atual": "Focado em hipertrofia",
+        "objetivo": "hipertrofia",
+        "grupos_musculares": "Peito e Biceps"
+      }
+    }
+  ]
+}

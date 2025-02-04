@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <script rel="text/javascript" src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <title>Especificações</title>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="content">
+        <main>
+            <div class="form-container">
+                <div class="perfil">
+                    <img src="img/icone_usuario.png" alt="Foto de Perfil">
+                    <div id="nome">
+                        <h1 class="nome__title"></h1>
+                        <hr>
+                    </div>
+                </div>
+                <h2>SOBRE<span style="color: #E92C4A; padding-left: 5px;">VOCÊ</span></h2>
+                <hr>
+                <form action="#">
+                    <label for="deficiencia">Possui alguma deficiência?</label>
+                    <div class="radio-buttons">
+                        <div class="sim">
+                            <input type="radio" id="deficiencia-sim" name="deficiencia" value="sim"
+                                class="fundo-alterado">
+                            <label for="deficiencia-sim">Sim</label>
+                        </div>
+                        <div class="nao">
+                            <input type="radio" id="deficiencia-nao" name="deficiencia" value="nao"
+                                class="fundo-alterado">
+                            <label for="deficiencia-nao">Não</label>
+                        </div>
+                    </div>
+                    <input type="text" id="descricao-deficiencia" name="descricao-deficiencia"
+                        placeholder="Se Sim, poderia descrever?"></input>
+
+                    <label for="lesao">Já teve alguma lesão e que ainda o incomoda?</label>
+                    <div class="radio-buttons">
+                        <div class="sim">
+                            <input type="radio" id="lesao-sim" name="lesao" value="sim" class="fundo-alterado">
+                            <label for="lesao-sim">Sim</label>
+                        </div>
+                        <div class="nao">
+                            <input type="radio" id="lesao-nao" name="lesao" value="nao" class="fundo-alterado">
+                            <label for="lesao-nao">Não</label>
+                        </div>
+                    </div>
+                    <input type="text" id="descricao-lesao" name="descricao-lesao"
+                        placeholder="Se Sim, poderia descrever?"></input>
+
+                    <label for="condicao-medica">Possui alguma condição médica existente?</label>
+                    <div class="radio-buttons">
+                        <div class="sim">
+                            <input type="radio" id="condicao-medica-sim" name="condicao-medica" value="sim"
+                                class="fundo-alterado">
+                            <label for="condicao-medica-sim">Sim</label>
+                        </div>
+                        <div class="nao">
+                            <input type="radio" id="condicao-medica-nao" name="condicao-medica" value="nao"
+                                class="fundo-alterado">
+                            <label for="condicao-medica-nao">Não</label>
+                        </div>
+                    </div>
+                    <input type="text" id="descricao-condicao-medica" name="descricao-condicao-medica"
+                        placeholder="Se Sim, poderia descrever?"></input>
+
+                    <label for="peso">Qual o seu peso (kg)?</label>
+                    <input type="number" id="peso" name="peso">
+
+                    <label for="altura">Qual a sua altura (cm)?</label>
+                    <input type="number" id="altura" name="altura">
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h2>SOBRE A <span style="color: #E92C4A; padding-left: 5px;">ACADEMIA</span></h2>
+                <hr>
+                <form action="#">
+                    <label for="dias-treino">Quantos dias disponíveis para treinar?</label>
+                    <input type="number" id="dias-treino" name="dias-treino">
+
+                    <label for="tempo-treino">Você treina a quanto tempo?</label>
+                    <input type="text" id="tempo-treino" name="tempo-treino">
+
+                    <label for="treino-atual">Descreva seu treino atual:</label>
+                    <input type="text" id="treino-atual" name="treino-atual"></input>
+
+                    <label for="objetivo">Qual seu objetivo na academia?</label>
+                    <input type="text" id="objetivo" name="objetivo">
+
+                    <label for="grupos-musculares">Qual ou quais grupos musculares você quer priorizar?</label>
+                    <input type="text" id="grupos-musculares" name="grupos-musculares">
+
+                </form>
+                <div id="crud">
+                    <button class="botoes" id="button_salvar">
+                        <h2>SALVAR</h2>
+                    </button>
+                    <button class="botoes" id="button_exibir">
+                        <h2>EXIBIR</h2>
+                    </button>
+                    <button class="botoes" id="button_alterar">
+                        <h2>ALTERAR</h2>
+                    </button>
+                    <button class="botoes" id="button_limpar">
+                        <h2>REMOVER</h2>
+                    </button>
+                </div>
+
+                <button type="submit" id="button_finalizar">
+                    <h2>FINALIZAR</h2>
+                </button>
+
+
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Todos os Direitos reservados - 2024</p>
+        </footer>
+    </div>
+</body>
+
+</html>

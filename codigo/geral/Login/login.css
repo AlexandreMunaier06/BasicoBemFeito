@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('../imgs/BackG\ academia.avif') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; 
+    filter: blur(10px);
+    z-index: -1; 
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    background-color: rgba(34, 34,34 ,0.8);
+    
+}
+
+.logo img {
+    max-width: 200px; 
+    margin-bottom: 10px;
+    margin: -10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background: #E92C4A;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px ;
+}
+
+.btn:hover {
+    background: white;
+    transition: 0.5s;
+}
+
+.btn:hover a {
+    color: #E92C4A;
+    transition: 0.5s;
+}
+
+a {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.input-group label {
+    font-family: "Jockey One", sans-serif;
+    display: flex;
+    font-weight: 100;
+    font-style: italic;
+    text-transform: uppercase;
+}

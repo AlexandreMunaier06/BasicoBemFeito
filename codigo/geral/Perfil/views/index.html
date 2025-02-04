@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="https://kit.fontawesome.com/e6ba16fcdf.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js" defer type="module"></script>
+</head>
+
+<body>  
+    <div class="background"></div>
+        <div class="content">
+            <header class="">
+                <nav class="navbar shadow navbar-dark bg-dark sticky-top">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler aside" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <button class="voltar">Voltar</button>
+                    </div>
+                </nav>
+            </header>
+            <div class="card-main">
+                <aside>
+                    <div class="offcanvas offcanvas-start d-flex flex-column flex-shrink-0 p-3 text-bg-dark" data-bs-scroll="true"
+                        tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel"
+                        style="width: 280px">
+                        <img src="../../imgs/logoTransparente.png" alt="" width="150"  class="rounded-circle me-2 mx-5 my-3" />
+                        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <img src="../../imgs/usuario.png" alt="" width="60"  class="rounded-circle me-2" />
+                            <span class="fs-4 user__name">Usuário</span>
+                        </a>
+                        <hr />
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" aria-current="page">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person me-2" viewBox="0 0 16 16">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                      </svg>
+                                    Perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../especificacaousuario/index.html" class="nav-link text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart me-2" viewBox="0 0 16 16">
+                                        <path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+                                      </svg>
+                                    Dados Complementares
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pagamento.html" class="nav-link text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card me-2" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                                      </svg>
+                                    Plano e Pagamento
+                                </a>
+                            </li>
+                        </ul>
+                        <hr />
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../imgs/usuario.png" alt="" width="35"  class="rounded-circle me-2" />
+                                <strong>Perfil</strong>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                                <li><a class="dropdown-item" href="../../Perfil/views/index.html">Perfil</a></li>
+                                <li><a class="dropdown-item" href="https://wa.me/31971316645">Suporte</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="../../Login/login.html">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <main id="main" class="my-3 text-white mx-4 ">
+                    <h1><em>MINHA <span class="conta">CONTA</span></em></h1>
+                    <p class="text-light mx-2">Edite suas informações pessoais e faturamento</p>
+                    <hr class="mx-0">
+            
+                    <form class="personal-form">
+                        <div class="container text-center">
+                            <div class="row">
+                              <div class="col-lg-4 col-md-5 col-sm-12 my-3">
+                                <div class="d-flex flex-column obrigatorio-name">
+                                    <label class="form-label" for="name">Nome: </label>
+                                    <input class="" type="text" name="name" id="name" disabled>
+                                </div>
+                              </div>
+                              <div class="col-lg-5 col-md-5 col-sm-12 my-3">
+                                <div class="d-flex flex-column obrigatorio-sobrenome">
+                                <label for="sobrenome">Sobrenome: </label>
+                                <input class="" type="text" name="sobrenome" id="sobrenome" disabled>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-5 col-sm-12 my-3">
+                                <div class="d-flex flex-column obrigatorio-email">
+                                    <label for="email">Email: </label>
+                                    <input class="" type="email" name="email" id="email" disabled>
+                                </div>
+                              </div>
+                              <div class="col-lg-5 col-md-5 col-sm-12 my-3">
+                                <div class="d-flex flex-column obrigatorio-telefone">
+                                    <label for="telefone">Telefone: </label>
+                                    <input class="" type="text" name="telefone" id="telefone" disabled>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-5 col-sm-12 my-3">
+                                <div class="d-flex flex-column obrigatorio-password">
+                                    <label for="password">Senha: </label>
+                                    <input class="" type="password" name="password" id="password" disabled>
+                                </div>
+                              </div>
+                              <div class="col-lg-5 col-md-5 col-sm-12 my-3">
+                                <div class="d-flex flex-column obrigatorio-genero">
+                                    <label for="genero">Gênero: </label>
+                                    <select name="genero" id="genero" class="" disabled>
+                                        <option value="" disabled selected>Selecione uma opção</option>
+                                        <option value="Masculino">Masculino</option>
+                                        <option value="Feminino">Feminino</option>
+                                    </select>
+                                </div>
+                              </div>
+                              <div class="col-lg-8 col-md-5 col-sm-12 my-3">
+                                <div class="d-flex flex-column obrigatorio-plan">
+                                    <label for="plan">Plano Atual: </label>
+                                    <select name="plan" id="plan" class="" disabled>
+                                        <option value="" disabled selected>Selecione uma opção</option>
+                                        <option value="Plano Grátis">Plano Grátis</option>
+                                        <option value="Plano Mensal">Plano Mensal</option>
+                                        <option value="Plano Anual">Plano Anual</option>
+                                    </select>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-md-4 col-sm-6 my-3 offset-lg-3 offset-md-2 offset-sm-2">
+                                <div class="d-flex flex-column red mb-3 div-btn">
+                                    <div class="btns">
+                                        <button class="btn btn-primary btn-save" type="button">Salvar Dados</button>
+                                        <button class="btn btn-primary btn-cancel" type="button">Cancelar</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+                </main>
+                <div class="card" style="width: 18rem;">
+                    <h4 class="card-title text-center card-plan my-2"></h4>
+                    <img src="../../imgs/usuario.png" class="card-img-top" alt="Foto de Usuário">
+                    <div class="card-body">
+                      <h5 class="card-title text-center card-name"></h5><br>
+                      <h6 class="card-title text-start">Informações Pessoais: </h6>
+                      <p class="card-text"><i class="fa-solid fa-envelope"></i> <span class="card-email"></span></p>
+                      <p class="card-text"><i class="fa-solid fa-phone"></i> <span class="card-phone"></span></p>
+                      <p class="card-text"><i class="fa-solid fa-user"></i> <span class="card-genre"></span></p>
+                      <p class="card-text"><i class="fa-solid fa-lock"></i> <span class="card-password"></span></p>
+                      <div class="text-center">
+                        <button class="btn btn-primary card-btn">Editar Dados</button>
+                      </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <footer>
+            <p>&copy; Todos os Direitos reservados - 2024</p>
+        </footer>
+</body>
+
+</html>

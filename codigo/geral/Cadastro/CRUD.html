@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Cadastros</title>
+    <link rel="stylesheet" href="CRUD.CSS"></link>
+</head>
+<body>
+    <h1>Cadastros:</h1>
+    <ul id="cadastros-list"></ul>
+
+    <button onclick="criarCadastro()">Criar Cadastro</button>
+    <button onclick="excluirCadastro()">Excluir Cadastro</button>
+    <button onclick="atualizarCadastro()">Atualizar Cadastro</button>
+
+    <script>
+
+let cadastros = JSON.parse(localStorage.getItem('cadastros')) || [];
+
+function exibirCadastros() {
+    const cadastrosList = document.getElementById('cadastros-list');
+    cadastrosList.innerHTML = ''; 
+
+    if (cadastros && cadastros.length > 0) {
+        cadastros.forEach((cadastro, index) => {
+            const li = document.createElement('li');
+            li.textContent = `Índice ${index + 1}: Nome: ${cadastro.firstName} ${cadastro.lastName}, Email: ${cadastro.email}, Celular: ${cadastro.number}, Gênero: ${cadastro.gender}`;
+            cadastrosList.appendChild(li);
+        });
+    } else {
+        const li = document.createElement('li');
+        li.textContent = 'Nenhum cadastro encontrado.';
+        cadastrosList.appendChild(li);
+    }
+}
+
+
+function criarCadastro() {
+    const novoCadastro = {
+        firstName: prompt('Digite o primeiro nome:'),
+        lastName: prompt('Digite o sobrenome:'),
+        email: prompt('Digite o email:'),
+        number: prompt('Digite o número de celular:'),
+        gender: prompt('Digite o gênero (Homem, Mulher, Outros, Prefiro não dizer):')
+    };
+
+    cadastros.push(novoCadastro);
+    localStorage.setItem('cadastros', JSON.stringify(cadastros));
+    exibirCadastros();
+}
+
+
+function excluirCadastro() {
+    const indice = prompt('Digite o índice do cadastro a ser excluído:');
+    if (indice !== null && indice !== '') {
+        const indexToDelete = parseInt(indice) - 1;
+        if (indexToDelete >= 0 && indexToDelete < cadastros.length) {
+            cadastros.splice(indexToDelete, 1);
+            localStorage.setItem('cadastros', JSON.stringify(cadastros));
+            exibirCadastros();
+        } else {
+            alert('Índice inválido. Por favor, insira um índice válido.');
+        }
+    }
+}
+
+function atualizarCadastro() {
+    const indice = prompt('Digite o índice do cadastro a ser atualizado:');
+    if (indice !== null && indice !== '') {
+        const indexToUpdate = parseInt(indice) - 1;
+        if (indexToUpdate >= 0 && indexToUpdate < cadastros.length) {
+            const cadastroAtualizado = {
+                firstName: prompt('Digite o novo primeiro nome:'),
+                lastName: prompt('Digite o novo sobrenome:'),
+                email: prompt('Digite o novo email:'),
+                number: prompt('Digite o novo número de celular:'),
+                gender: prompt('Digite o novo gênero (Homem, Mulher, Outros, Prefiro não dizer):')
+            };
+            cadastros[indexToUpdate] = cadastroAtualizado;
+            localStorage.setItem('cadastros', JSON.stringify(cadastros));
+            exibirCadastros();
+        } else {
+            alert('Índice inválido. Por favor, insira um índice válido.');
+        }
+    }
+}
+
+
+exibirCadastros();
+    </script>
+</body>
+</html>

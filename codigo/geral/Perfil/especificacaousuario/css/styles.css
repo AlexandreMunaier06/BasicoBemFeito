@@ -1,0 +1,815 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@700&display=swap");
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h1, button{
+    font-family: 'Jockey One', sans-serif;
+}
+
+#nome__title2{
+    text-transform: uppercase;
+    font-family: 'Jockey One', sans-serif
+}
+#nome__title1{
+    text-transform: capitalize;
+    font-family: 'Jockey One', sans-serif
+}
+:root{
+    --bg-color: #333333;
+    --secondary-color: #3a3838;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.divcontent{
+    z-index: 1;
+    position: relative;
+}
+
+.input-disabled {
+    color: white !important;
+}
+
+
+.radio-buttons {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.radio-buttons input[type="radio"] {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.radio-buttons label {
+    margin: 0;
+}
+
+.sim {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.nao {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-buttons label:before {
+    content: "";
+    cursor: pointer;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+   
+    
+    bottom: 1px;
+    background-color: #aaa; 
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+input[type="radio"]:checked + label:before {
+    content: "";
+    color: #f3f3f3;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+input[type="radio"].fundo-alterado:checked + label:before {
+    background-color: #E92C4A; 
+}
+
+#nome__title{
+    font-family: 'Jockey One', sans-serif;
+    text-transform: uppercase;
+}
+
+.background-image{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+    filter: blur(10px); 
+    background-image: url('../../../Cadastro/Pagamento/img-pagamento/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    
+}
+
+nav{
+    width: 100%;
+}
+
+svg{
+    margin-right: 8px;
+}
+
+aside div:nth-child(1){
+    background-color: var(--secondary-color);
+}
+
+aside div ul a:hover{
+    background-color: rgb(30, 87, 161);
+}
+
+.voltar {
+    height: 2rem;
+    width: 7rem;
+    margin-right: 2rem;
+    background-color: #E92C4A;
+    border: #E92C4A;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s, color 0.3s; 
+    padding: 0;
+    
+}
+
+.voltar:hover {
+    background-color: #ffffff; 
+    color: #E92C4A; 
+}
+
+.sidebar {
+    background-color: #373737;
+    color: #111;
+    padding: 1.25rem;
+    width: 11rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.sidebar button {
+    border: none;
+    border-radius: 0.9375rem;
+    background-color: #181818;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.625rem 1.25rem;
+    margin-bottom: 0.625rem;
+    width: 100%; 
+    text-align: center; 
+}
+
+.sidebar button:hover {
+    background-color: #000000;
+    transition: 0.2s ease-in-out;
+}
+
+.meu-perfil {
+    text-align: center;
+    padding-top: 3.125rem;
+    padding-bottom: 5rem;
+}
+
+.perfil-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.625rem;
+}
+
+.perfil-info img {
+    margin-right: 0.5rem;
+}
+
+.perfil-texto {
+    margin-top: 0.3125rem;
+}
+
+.meu-perfil button {
+    height: 6.25rem;
+}
+
+.meu-perfil img {
+    display: flex;
+    width: 2.5rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+aside button {
+    width: 12.5rem;
+    border-radius: 3.125rem;
+    background-color: #fd0000;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.button-div {
+    padding-top: 2.5rem;
+}
+
+.last-button {
+    margin-top: auto;
+}
+
+.content { 
+    padding: 5%;
+    background-color: rgba(44,44,44,0.8);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+    background-color: #404040;
+    height: 8.4375rem; 
+}
+
+button {
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.form-group img {
+    display: flex;
+    width: 6.25rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.perfil-info-main {
+    display: flex;
+    padding-left: 3.125rem;
+    align-items: center;
+    padding-top: 0.625rem;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.perfil-info-main img {
+    margin-right: 2.5rem;
+    
+}
+
+.perfil-nome-main {
+    width: 75rem;
+}
+
+.perfil-nome-main hr{
+    width: 90%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    border-bottom: 0.9375rem solid #E92C4A;
+    border-radius: 10px;
+}
+
+.container-sobrevoce {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+#title-sobrevoce {
+    color: white;
+    font-style: italic;
+}
+
+#descreva {
+    height: 10rem;
+}
+
+#container-informacoes {
+    color: white;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.informacoes {
+    margin-bottom: 1.25rem;
+}
+
+.label-info {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.625rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    color:rgb(0, 0, 0);
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.peso-altura {
+    display: flex;
+    justify-content: space-between;
+}
+
+.peso-altura > input{
+    width: 50%;
+}
+
+#link {
+  text-decoration: none;
+  color: white;
+}
+
+label {
+    color: white; 
+    font-weight: bold; 
+}
+
+.save-button {
+    background-color: #333333;
+    color: #ffffff;
+    border:2px solid #E92C4A;
+    border-radius: 5px;
+    height: 3rem;
+    margin-right: 0.5rem;
+    font-weight: bolder;
+}
+
+.edit-button {
+    border:2px solid #E92C4A;
+    color: #ffffff;
+   background-color: #333333;
+    border-radius: 5px;
+    height: 3rem;
+    margin-left: -0.5rem;
+    font-weight: bolder;
+}
+
+.save-button:hover, .edit-button:hover {
+    border:2px solid white;
+    color: #E92C4A;
+    transition: 0.5s ease-in-out;
+}
+
+.container-sobrevoce {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    position: relative; 
+}
+
+.container-sobrevoce::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.1875rem; 
+    width: 100%;
+    border-bottom: 0.0625rem solid #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .content {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .perfil-info-main {
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .perfil-info-main img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+        padding: 0.625rem;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-div button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .container-sobrevoce {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #descreva {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .content {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .perfil-info-main {
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .perfil-info-main img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+        padding: 0.625rem;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-div button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .container-sobrevoce {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #descreva {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .sidebar {
+        padding: 1rem;
+        width: 15rem;
+    }
+
+    .content {
+        padding: 2rem;
+        width: calc(100% - 17rem);
+    }
+
+    .perfil-info-main {
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .perfil-info-main img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+        padding: 0.625rem;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-div button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .container-sobrevoce {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #descreva {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .content {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .perfil-info-main {
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .perfil-info-main img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+        padding: 0.625rem;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-div button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .container-sobrevoce {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #descreva {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .content {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .perfil-info-main {
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .perfil-info-main img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+        padding: 0.625rem;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-div button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .container-sobrevoce {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #descreva {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .sidebar {
+        padding: 1rem;
+        width: 14rem;
+    }
+
+    .content {
+        padding: 2rem;
+        width: calc(100% - 16rem);
+    }
+
+    .perfil-info-main {
+        flex-direction: row;
+        padding-left: 1rem;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .perfil-info-main img {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+        padding: 0.625rem;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .button-div button {
+        width: auto;
+        margin: 0;
+    }
+
+    .container-sobrevoce {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #descreva {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .content {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .perfil-info-main {
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .perfil-info-main img {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-div button {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+
+    .container-sobrevoce {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #descreva {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sidebar {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .content {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .perfil-info-main {
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .perfil-info-main img {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-div button {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+
+    .container-sobrevoce {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #descreva {
+        height: auto;
+    }
+}
